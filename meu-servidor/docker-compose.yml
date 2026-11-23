@@ -8,4 +8,5 @@ services:
     volumes:
       - ./config/jellyfin:/config
       - ./midia:/midia:ro
+      - "E:/musicas:/musicas:ro"
     restart: unless-stopped

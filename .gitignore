@@ -1,0 +1,74 @@
+# ==========================================
+# Mídias (filmes, séries, músicas, legendas)
+# ==========================================
+meu-servidor/midia/
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.m4v
+*.mp3
+*.flac
+*.wav
+*.ogg
+*.m4a
+*.aac
+*.opus
+*.srt
+*.sub
+*.ass
+*.vtt
+
+# ==========================================
+# Jellyfin - runtime, bancos, logs, cache e metadados
+# ==========================================
+meu-servidor/config/jellyfin/cache/
+meu-servidor/config/jellyfin/data/
+meu-servidor/config/jellyfin/log/
+meu-servidor/config/jellyfin/metadata/
+meu-servidor/config/jellyfin/transcodes/
+meu-servidor/config/jellyfin/plugins/*.dll
+meu-servidor/config/jellyfin/plugins/*/
+!meu-servidor/config/jellyfin/plugins/configurations/
+
+# ==========================================
+# Navidrome - banco de dados, cache e plugins
+# ==========================================
+meu-servidor/config/navidrome/cache/
+meu-servidor/config/navidrome/plugins/
+meu-servidor/config/navidrome/*.db
+meu-servidor/config/navidrome/*.db-shm
+meu-servidor/config/navidrome/*.db-wal
+
+# ==========================================
+# Bancos de dados, logs e backups em geral
+# ==========================================
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.log
+*.bak
+
+# ==========================================
+# Variáveis de ambiente e segredos
+# ==========================================
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# Sistema operacional e editores
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
